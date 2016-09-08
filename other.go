@@ -14,6 +14,16 @@ func SetOutputLevel(l interface{}) {
 	v = Level(n)
 }
 
+const (
+	Lmodule = iota
+	Llevel
+	LstdFlags
+)
+
+func SetFlags(flag int) {
+
+}
+
 // ======== 兼容 wothing/log ===============
 
 // TraceIn and TraceOut use in function in and out,reduce code line
